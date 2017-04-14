@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #E6DCB3;
+  color: black;
+}
+
+.button, .dropdown-menu {
+  margin: 10px auto;
+}
+
+#right-nav button, #left-nav button {
+  margin: 0 10px;
+}
+
+.btn {
+  color: white;
+}
+
+.navbar {
+  background-color: #4D1919;
+  color: white;
+}
+
+.navbar h1 {
+  color: #E79C39;
+}
+
+.navbar .btn {
+  background-color: #C9AF5E;
+}
+
+.navbar-header {
+  text-align: center;
+}
