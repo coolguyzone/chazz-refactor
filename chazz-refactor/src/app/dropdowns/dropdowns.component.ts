@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { APISearchService } from './dropdowns.service'
+import {
+  Output,
+  EventEmitter,
+  ElementRef
+} from '@angular/core';
 
 @Component({
   selector: 'app-dropdowns',
@@ -7,7 +13,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DropdownsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private APISearch: APISearchService,
+              private el: ElementRef) {
+  }
+
+  // animalSearch() {
+  //
+  // }
 
   ngOnInit() {
   }

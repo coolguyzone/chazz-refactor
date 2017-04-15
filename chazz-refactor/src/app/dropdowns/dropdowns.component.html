@@ -1,4 +1,13 @@
 <div class="row" id="dropdowns">
   <p>Please Specify Your Preferred Animal And Firmness To get Cheese Recommendations While You Enjoy Jazz</p>
-  <app-animal-dropdown></app-animal-dropdown>
+  <app-animal-dropdown
+  (loading)="loading = $event"
+  (results)="updateResults($event)"
+  ></app-animal-dropdown>
 </div>
+
+
+<h2>Basic Request</h2>
+<button type="button" (click)="this.APISearch.animalSearch('goat')">Make Request</button>
+<div *ngIf="loading">loading...</div>
+<pre>{{data | json}}</pre>

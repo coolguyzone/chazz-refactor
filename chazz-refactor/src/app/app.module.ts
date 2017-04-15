@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { dropdownsInjectables } from './dropdowns/dropdowns.injectables';
 
 import { AppComponent } from './app.component';
 import { TitlebarComponent } from './titlebar/titlebar.component';
@@ -28,7 +29,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [dropdownsInjectables],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
