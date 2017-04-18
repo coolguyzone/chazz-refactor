@@ -33,14 +33,13 @@
 
 <div class="btn-group" dropdown>
   <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-    Button dropdown <span class="caret"></span>
+    Animal <span class="caret"></span>
   </button>
   <ul *dropdownMenu class="dropdown-menu" role="menu">
-    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-    <li class="divider dropdown-divider"></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+    <li role="menuitem"><a class="dropdown-item" href="#" #cow (click)="this.APISearch.animalSearch('cow', $event)">Cow</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#" #goat (click)="this.APISearch.animalSearch('goat', $event)">Goat</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#" #sheep (click)="this.APISearch.animalSearch('sheep', $event)">Sheep</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#" #buffalo (click)="this.APISearch.animalSearch('buffalo', $event)">Buffalo</a>
     </li>
   </ul>
 </div>

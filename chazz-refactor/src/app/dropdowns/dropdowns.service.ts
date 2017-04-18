@@ -21,27 +21,10 @@ export class APISearchService {
 
     }
 
-    // animalSearch(animal: string): Observable<FetchResult[]> {
-    //   console.log('yo!');
-    //   const param: string = `animal=${animal}`;
-    //   const fetchUrl = `http://cheeswhiz.herokuapp.com/api/cheese/animal/${param}`;
-    //   console.log('fetchUrl', fetchUrl);
-    //   return this.http.get(fetchUrl)
-    //   .map((response: Response) => {
-    //     console.log('items', response.json());
-    //     return (<any>response.json()).items.map(item => {
-    //       return new FetchResult({
-    //         name: item.name,
-    //         animal: item.animal,
-    //         firmness: item.firmness
-    //       });
-    //     });
-    //   });
-    // }
 
-
-    animalSearch(animal: string): void {
+    animalSearch(animal: string, event: any): void {
         console.log('yo!');
+        event.preventDefault();
         const param: string = `${animal}`;
         const fetchUrl = `http://cheeswhiz.herokuapp.com/api/cheese/animal/${param}`;
         console.log('fetchUrl', fetchUrl);
