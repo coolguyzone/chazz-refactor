@@ -1,3 +1,14 @@
-<p>
-  firmness-dropdown works!
-</p>
+<div class="dropdown col-md-6">
+  <div class="btn-group" dropdown>
+    <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+      Firmness <span class="caret"></span>
+    </button>
+    <ul *dropdownMenu class="dropdown-menu" role="menu">
+      <li role="menuitem"><a class="dropdown-item" href="#" #hard >Hard</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#" #semihard >Hard</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#" #semisoft >Semi-soft</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#" #soft>Soft</a>
+      </li>
+    </ul>
+  </div>
+</div>  

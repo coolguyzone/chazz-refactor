@@ -31,15 +31,17 @@
   </ul>
 </div> -->
 
-<div class="btn-group" dropdown>
-  <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-    Animal <span class="caret"></span>
-  </button>
-  <ul *dropdownMenu class="dropdown-menu" role="menu">
-    <li role="menuitem"><a class="dropdown-item" href="#" #cow (click)="this.APISearch.animalSearch('cow', $event)">Cow</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#" #goat (click)="this.APISearch.animalSearch('goat', $event)">Goat</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#" #sheep (click)="this.APISearch.animalSearch('sheep', $event)">Sheep</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#" #buffalo (click)="this.APISearch.animalSearch('buffalo', $event)">Buffalo</a>
-    </li>
-  </ul>
-</div>
+<div class="dropdown col-md-6">
+  <div class="btn-group" dropdown>
+    <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+      Animal <span class="caret"></span>
+    </button>
+    <ul *dropdownMenu class="dropdown-menu" role="menu">
+      <li role="menuitem"><a class="dropdown-item" href="#" #cow (click)="this.APISearch.animalSearch('cow', $event)">Cow</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#" #goat (click)="this.APISearch.animalSearch('goat', $event)">Goat</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#" #sheep (click)="this.APISearch.animalSearch('sheep', $event)">Sheep</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#" #buffalo (click)="this.APISearch.animalSearch('buffalo', $event)">Buffalo</a>
+      </li>
+    </ul>
+  </div>
+</div>  

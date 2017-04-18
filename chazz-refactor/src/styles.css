@@ -36,3 +36,47 @@ body {
 .navbar-header {
   text-align: center;
 }
+
+#dropdowns .btn, #player .btn, #cheeses .btn {
+  background-color: #4D1919;
+}
+
+.cheese:nth-of-type(-n + 2) {
+  margin-top: 4px;
+}
+
+.cheese:nth-of-type(n + 3) {
+  margin-top: 60px;
+}
+
+.dropdown {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dropdown ul {
+  text-align: center !important;
+}
+
+.button, .dropdown-menu{
+  margin:10px auto;
+}
+
+.dropdown-menu{
+  width:200px;
+  left:50%;
+  margin-left:-100px;
+}
+
+#dropdowns, #tasted-top, #login{
+  height: 120px;
+  /*border: 2px solid red;*/
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+#dropdowns p {
+  text-align: center;
+  margin-top: 10px;
+}

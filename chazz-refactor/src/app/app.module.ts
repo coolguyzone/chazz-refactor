@@ -22,6 +22,8 @@ import { MasterComponent } from './master/master.component';
 import { TastedComponent } from './tasted/tasted.component';
 import { HomeComponent } from './home/home.component';
 import { TastedMainComponent } from './tasted-main/tasted-main.component';
+import { CheeseComponent } from './cheese/cheese.component';
+import { TastedTopComponent } from './tasted-top/tasted-top.component';
 
 
 export const routes: Routes = [
@@ -44,7 +46,9 @@ export const routes: Routes = [
     MasterComponent,
     TastedComponent,
     HomeComponent,
-    TastedMainComponent
+    TastedMainComponent,
+    CheeseComponent,
+    TastedTopComponent
   ],
   imports: [
     BsDropdownModule.forRoot(),

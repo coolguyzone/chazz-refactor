@@ -3,3 +3,19 @@
   height: 390px;
   margin-top: 10px;
 }
+
+#tasted-main {
+  text-align: center;
+}
+
+#tasted-main h2 {
+  margin-top: 40px;
+}
+
+.removed-cheese img {
+  width: 50px;
+}
+
+.removed-cheese {
+  text-align: center;
+}
