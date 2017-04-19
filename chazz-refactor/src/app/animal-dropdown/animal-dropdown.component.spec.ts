@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AnimalDropdownComponent } from './animal-dropdown.component';
 
 describe('AnimalDropdownComponent', () => {

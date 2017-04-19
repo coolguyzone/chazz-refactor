@@ -8,7 +8,7 @@ import { Routes, RouterModule, Router, ActivatedRoute } from '@angular/router';
 })
 export class TitlebarComponent implements OnInit {
 
-   @ViewChild('puppetContainer', { read: ViewContainerRef }) puppetContainer: ViewContainerRef;
+  @ViewChild('puppetContainer', { read: ViewContainerRef }) puppetContainer: ViewContainerRef;
 
   constructor(
     private router: Router,
@@ -20,13 +20,13 @@ export class TitlebarComponent implements OnInit {
   ngOnInit() {
     this.route.data
     .subscribe(data => {
-      if(!!data && !!data.puppets && data.puppets.length > 0){
+      if (!!data && !!data.puppets && data.puppets.length > 0) {
         data.puppets.map(puppet => {
-          let componentFactory = this._componentFactoryResolver.resolveComponentFactory(puppet);
+          const componentFactory = this._componentFactoryResolver.resolveComponentFactory(puppet);
           this.puppetContainer.createComponent(componentFactory);
         });
       }
-   });
+    });
   }
 
 }
